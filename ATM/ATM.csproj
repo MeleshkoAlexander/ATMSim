@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85CFB63D-65AD-44FA-9BE3-109A4D1AB707}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ATM</RootNamespace>
+    <AssemblyName>ATM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IOF.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Presentors\PresentorATM.cs" />
+    <Compile Include="Presentors\PresentorATMInput.cs" />
+    <Compile Include="Presentors\PresentorATMMenu.cs" />
+    <Compile Include="Presentors\PresentorInput.cs" />
+    <Compile Include="StructCard.cs" />
+    <Compile Include="View\ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ATM.Designer.cs">
+      <DependentUpon>ATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ATMInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ATMInput.Designer.cs">
+      <DependentUpon>ATMInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ATMMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ATMMenu.Designer.cs">
+      <DependentUpon>ATMMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Input.Designer.cs">
+      <DependentUpon>Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkWithBalance.cs" />
+    <EmbeddedResource Include="View\ATM.resx">
+      <DependentUpon>ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMInput.be-BY.resx">
+      <DependentUpon>ATMInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMInput.en.resx">
+      <DependentUpon>ATMInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMInput.pl-PL.resx">
+      <DependentUpon>ATMInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMInput.resx">
+      <DependentUpon>ATMInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\ATMMenu.be-BY.resx">
+      <DependentUpon>ATMMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMMenu.en.resx">
+      <DependentUpon>ATMMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMMenu.pl-PL.resx">
+      <DependentUpon>ATMMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ATMMenu.resx">
+      <DependentUpon>ATMMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Input.be-BY.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Input.en.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Input.pl-PL.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Input.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
