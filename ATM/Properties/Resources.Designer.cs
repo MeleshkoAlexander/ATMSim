@@ -61,7 +61,7 @@ namespace ATM.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Card.xml.
+        ///   Looks up a localized string similar to ../../Card.xml.
         /// </summary>
         internal static string CardFile {
             get {

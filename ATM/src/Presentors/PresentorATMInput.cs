@@ -35,7 +35,7 @@ namespace ATM.Presentors
         void InputNumbCardClickHandeler(object sender, EventArgs e)
         {
             int numb = 0;
-            numb = IOF.InputXmlFile(numb, "Card.xml", myModel.list());
+            numb = IOF.InputXmlFile(numb,Properties.Resources.CardFile, myModel.list());
             StructCard Card = SearchCard(myModel.list(), out numb);
             if (!(Card == null))
             {

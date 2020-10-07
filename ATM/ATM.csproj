@@ -55,19 +55,27 @@
     <Compile Include="src\Presentors\PresentorATMInput.cs" />
     <Compile Include="src\Presentors\PresentorATMMenu.cs" />
     <Compile Include="src\Presentors\PresentorInput.cs" />
-    <Compile Include="src\View\ATM.cs" />
+    <Compile Include="src\View\ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="src\View\ATM.Designer.cs">
       <DependentUpon>ATM.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\View\ATMInput.cs" />
+    <Compile Include="src\View\ATMInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="src\View\ATMInput.Designer.cs">
       <DependentUpon>ATMInput.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\View\ATMMenu.cs" />
+    <Compile Include="src\View\ATMMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="src\View\ATMMenu.Designer.cs">
       <DependentUpon>ATMMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\View\Input.cs" />
+    <Compile Include="src\View\Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="src\View\Input.Designer.cs">
       <DependentUpon>Input.cs</DependentUpon>
     </Compile>
@@ -133,6 +141,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Card.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

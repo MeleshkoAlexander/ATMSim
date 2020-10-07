@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfStructCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StructCard>
+    <numbcard>5105105105105100</numbcard>
+    <pasword>1234</pasword>
+    <balance>10100</balance>
+  </StructCard>
+  <StructCard>
+    <numbcard>4111111111111111</numbcard>
+    <pasword>2345</pasword>
+    <balance>866</balance>
+  </StructCard>
+  <StructCard>
+    <numbcard>4222222222222</numbcard>
+    <pasword>3456</pasword>
+    <balance>100000</balance>
+  </StructCard>
+  <StructCard>
+    <numbcard>5555555555554444</numbcard>
+    <pasword>2143</pasword>
+    <balance>10000</balance>
+  </StructCard>
+  <StructCard>
+    <numbcard>4012888888881881</numbcard>
+    <pasword>4567</pasword>
+    <balance>10000</balance>
+  </StructCard>
+  <StructCard>
+    <numbcard>4012888888881881</numbcard>
+    <pasword>1122</pasword>
+    <balance>1000000</balance>
+  </StructCard>
+</ArrayOfStructCard>
